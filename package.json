@@ -1,0 +1,18 @@
+{
+  "name": "@fontesoft/signature-fingerprint",
+  "version": "1.0.0",
+  "description": "Ionic Native - Signature Fingerprint",
+  "module": "index.js",
+  "typings": "index.d.ts",
+  "author": "ionic",
+  "license": "MIT",
+  "peerDependencies": {
+    "@ionic-native/core": "^3.6.0 || >=4.0.0",
+    "@angular/core": "*",
+    "rxjs": "^5.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fontesoft/cordova-plugin-signature-fingerprint"
+  }
+}
