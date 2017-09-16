@@ -34,7 +34,12 @@ import { Plugin, Cordova, IonicNativePlugin } from '@ionic-native/core';
  * ...
  *
  *
- * this.signatureFingerprint.getCoolMethod('Hello')
+ * this.signatureFingerprint.getSignature()
+ *   .then((res: any) => console.log(res))
+ *   .catch((error: any) => console.error(error));
+ *
+ *
+ * this.signatureFingerprint.getPackageName()
  *   .then((res: any) => console.log(res))
  *   .catch((error: any) => console.error(error));
  *
@@ -46,12 +51,17 @@ var SignatureFingerprint = (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     /**
-     * This function does something
-     * @param arg1 {string} Some param to configure something
-     * @param arg2 {number} Another param to configure something
+     * Returns the signature fingerprint of the app
      * @return {Promise<any>} Returns a promise that resolves when something happens
      */
-    SignatureFingerprint.prototype.getCoolMethod = function (arg1) {
+    SignatureFingerprint.prototype.getSignature = function () {
+        return; // We add return; here to avoid any IDE / Compiler errors
+    };
+    /**
+     * Returns the package name of the app
+     * @return {Promise<any>} Returns a promise that resolves when something happens
+     */
+    SignatureFingerprint.prototype.getPackageName = function () {
         return; // We add return; here to avoid any IDE / Compiler errors
     };
     return SignatureFingerprint;
@@ -64,14 +74,20 @@ SignatureFingerprint.ctorParameters = function () { return []; };
 __decorate([
     Cordova(),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [String]),
+    __metadata("design:paramtypes", []),
     __metadata("design:returntype", Promise)
-], SignatureFingerprint.prototype, "getCoolMethod", null);
+], SignatureFingerprint.prototype, "getSignature", null);
+__decorate([
+    Cordova(),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], SignatureFingerprint.prototype, "getPackageName", null);
 SignatureFingerprint = __decorate([
     Plugin({
         pluginName: 'SignatureFingerprint',
         plugin: 'cordova-plugin-signature-fingerprint',
-        pluginRef: 'cordova.SignatureFingerprint',
+        pluginRef: 'cordova.getSignatureFingerprint',
         repo: 'https://github.com/fontesoft/cordova-plugin-signature-fingerprint',
         platforms: ['Android'],
     })

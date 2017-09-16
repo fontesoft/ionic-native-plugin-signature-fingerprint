@@ -14,7 +14,12 @@ import { IonicNativePlugin } from '@ionic-native/core';
  * ...
  *
  *
- * this.signatureFingerprint.getCoolMethod('Hello')
+ * this.signatureFingerprint.getSignature()
+ *   .then((res: any) => console.log(res))
+ *   .catch((error: any) => console.error(error));
+ *
+ *
+ * this.signatureFingerprint.getPackageName()
  *   .then((res: any) => console.log(res))
  *   .catch((error: any) => console.error(error));
  *
@@ -22,10 +27,13 @@ import { IonicNativePlugin } from '@ionic-native/core';
  */
 export declare class SignatureFingerprint extends IonicNativePlugin {
     /**
-     * This function does something
-     * @param arg1 {string} Some param to configure something
-     * @param arg2 {number} Another param to configure something
+     * Returns the signature fingerprint of the app
      * @return {Promise<any>} Returns a promise that resolves when something happens
      */
-    getCoolMethod(arg1: string): Promise<any>;
+    getSignature(): Promise<any>;
+    /**
+     * Returns the package name of the app
+     * @return {Promise<any>} Returns a promise that resolves when something happens
+     */
+    getPackageName(): Promise<any>;
 }
