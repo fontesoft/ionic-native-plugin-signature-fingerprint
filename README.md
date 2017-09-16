@@ -4,8 +4,6 @@ Signature Fingerprint is a TypeScript wrapper for Cordova/PhoneGap plugin cordov
 
 Requires Cordova plugin: `cordova-plugin-signature-fingerprint`. For more info, please see the [Cordova Signature Fingerprint docs](https://github.com/fontesoft/cordova-plugin-signature-fingerprint).
 
-Repo: https://github.com/fontesoft/cordova-plugin-signature-fingerprint
-
 ## Installation
 
 1. Install the Cordova and Ionic Native plugins:
