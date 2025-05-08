@@ -1,15 +1,13 @@
 {
-  "author": {
-    "name": "Samuel Fontebasso",
-    "email": "sfdsilva@fontesoft.com"
-  },
+  "name": "@fontesoft/signature-fingerprint",
+  "version": "1.0.3",
   "bundleDependencies": false,
   "deprecated": false,
   "description": "Signature Fingerprint is a TypeScript wrapper for Cordova/PhoneGap plugin cordova-plugin-signature-fingerprint",
   "homepage": "https://github.com/fontesoft/ionic-native#readme",
   "license": "MIT",
   "module": "index.js",
-  "name": "@fontesoft/signature-fingerprint",
+  
   "peerDependencies": {
     "@ionic-native/core": "^3.6.0 || >=4.0.0",
     "@angular/core": "*",
@@ -20,5 +18,9 @@
     "url": "git+https://github.com/fontesoft/ionic-native-plugin-signature-fingerprint.git"
   },
   "typings": "index.d.ts",
-  "version": "1.0.1"
+  "author": {
+    "name": "Samuel Fontebasso",
+    "email": "samuel.txd@gmail.com",
+    "url": "https://github.com/fontebasso"
+  }
 }
